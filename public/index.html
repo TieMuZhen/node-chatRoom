@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>聊天室</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./libs/jquery.js"></script>
+    <script src="./libs/mustache.js"></script>
+  </head>
+  <body>
+    <div class="inputName">
+			<input type="text" class="nickname" placeholder="请输入昵称">
+			<input type="button" class="connect" value="连接">
+	  </div>
+    <div class="container">
+      <div class="main">
+        <ul class="chatPane"></ul>
+        <ul class="userList"></ul>
+      </div>
+      <div class="submit">
+        <div class="insertOther">
+          <div class="emoImg"></div>
+          <div class="upEmoji">表情</div>
+          <div class="fontColor">
+            <input type="color" name="putColor"/>
+          </div>
+        </div>
+        <input type="text" class="inputConnect"/> <br/>
+        <input type="submit" value="提交" class="send"/>
+      </div>
+    </div>
+    <script type="text/html" id="listTemp">
+      <li class="onlineNum" style="font-size:15px;">共<span id="onlinecount"></span>位在线</li>
+      {{#.}}
+        <li style="margin-left:10px;font-size:12px">{{nickname}}</li>
+      {{/.}}
+    </script>
+    <script src="./js/socket.io.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/emoji.js"></script>
+  </body>
+</html>

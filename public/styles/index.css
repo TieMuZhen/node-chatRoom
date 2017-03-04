@@ -1,0 +1,91 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+ul{
+  list-style:none;
+}
+.inputName{
+  height: 50px;
+  width: 300px;
+  margin-top: 20%;
+  margin-left: 35%;
+  display: block;
+}
+.container{
+  height: 600px;
+  width: 1000px;
+  margin: auto;
+  display: none;
+}
+.main{
+  height: 300px;
+  margin-top: 90px;
+  margin-left: 200px;
+}
+.chatPane{
+  height: 300px;
+  width: 400px;
+  border: 1px solid black;
+  float: left;
+  overflow-y: scroll;
+}
+.userList{
+  height: 300px;
+  width: 100px;
+  border: 1px solid green;
+  float: left;
+  overflow-y: scroll;
+}
+.onlineNum{
+  height: 25px;
+  width: 83px;
+  background-color: grey;
+}
+.submit{
+  height: 120px;
+  width: 510px;
+  margin-left: 200px;
+}
+.insertOther{
+  height: 30px;
+  width: 402px;
+  border: 1px solid gray;
+}
+.upEmoji, .fontColor, .upImg, .upFile{
+  height: 26px;
+  width: 90px;
+  margin-left: 6px;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid green;
+  cursor: pointer;
+  float: left;
+}
+input[name="upImg"]{
+  width: 72px;
+}
+.emoImg{
+  height: 200px;
+  width: 270px;
+  border: 1px solid black;
+  position: absolute;
+  margin-top: -200px;
+  margin-left: 8px;
+  overflow-y: scroll;
+  display: none;
+}
+.emoImg img:hover{
+  cursor: pointer;
+  border: 1px solid black;
+}
+.inputConnect{
+  height: 80px;
+  width: 400px;
+  float: left;
+}
+.send{
+  height: 115px;
+  width: 100px;
+  margin-top: -50px;
+}
