@@ -1,4 +1,4 @@
-# node-chatRoom
+# 基于express和socket实现的简单在线聊天室
 
 运行项目：在根目录下打开终端输入`node server`回车即可
 
